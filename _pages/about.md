@@ -1,26 +1,40 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: PhD student at the University of Florence and University of Pisa, Italy
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: google_scholar_image.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  address:
 
 news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
+latest_posts: false  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
+
+interests:
+  - "Vision & Language"
+  - "Composed Image Retrieval"
+  - "Fashion Image Generation"
+education:
+  - course: PhD
+    institution: University of Florence / University of Pisa 
+    year: 2021-Current
+  - course: MSc in Computer Science
+    institution: University of Florence
+    year: 2019-2021
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hello! 👋
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I am Alberto Baldrati, a second-year PhD student enrolled in the AI Italian National Doctorate program based at the [University of Pisa](https://www.unipi.it/index.php/english]).
+In practice, I am hosted by the [University of Florence](https://www.unifi.it/changelang-eng.html) and work at the [Media Integration and Communication Center (MICC)](https://www.micc.unifi.it/) under the supervision of Prof. [Marco Bertini](https://scholar.google.com/citations?user=SBm9ZpYAAAAJ&hl=en). I also closely collaborate with [Lorenzo Agnolucci](https://scholar.google.com/citations?user=hsCt4ZAAAAAJ&hl=en) and [Davide Morelli](https://scholar.google.com/citations?user=UJ4D3rYAAAAJ&hl=en).
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Previously, I obtained my MSc in Computer Science and Engineering <em>magna cum laude</em> at the University of Florence under the supervision of Prof. [Marco Bertini](https://scholar.google.com/citations?user=SBm9ZpYAAAAJ&hl=en) and Prof. [Alberto Del Bimbo](https://scholar.google.com/citations?user=bf2ZrFcAAAAJ&hl=en) with a thesis titled <em>"Deep Learning techniques for image retrieval using joint textual and visual encoders"</em>.
+
+My main research interests revolve around <strong>vision and language</strong>, with a particular focus on vision and language pretraining and composed image retrieval, and <strong>fashion image generation</strong>, with a particular focus on multimodal fashion image editing and virtual try-on.
+
+<em>If you wish to learn more about my research or explore potential collaborations, please feel free to reach out via email!</em>

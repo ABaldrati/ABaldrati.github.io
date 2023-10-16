@@ -8,7 +8,7 @@ layout: default
           <h1 class="post-title">
             {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
           </h1>
-          <p class="desc">{{ page.subtitle }}</p>
+          <p class="desc"><em>{{ page.subtitle }}</em></p>
         </header>
 
         <article>
@@ -29,9 +29,9 @@ layout: default
               alt=page.profile.image
               cache_bust=true -%}
             {% endif -%}
-            {%- if page.profile.more_info %}
-            <div class="more-info">
-              {{ page.profile.more_info }}
+            {%- if page.profile.address %}
+            <div class="address">
+              {{ page.profile.address }}
             </div>
             {%- endif %}
           </div>
@@ -40,10 +40,41 @@ layout: default
           <div class="clearfix">
             {{ content }}
           </div>
+          
+          <!-- Research Interests and Education -->
+          <!--
+          <div class="col-12 col-lg-8">
+            <h2>Research Interest</h2>
+            <p class="justify">{{ page.research }}</p>
+            <div class="row">
+              <div class="col-md-5">
+                <div class="section-subheading">Interests</div>
+                  <ul class="ul-interests fa-ul mb-0">
+                {% for interest in page.interests %}
+                    <li><i class="fa-li fa-solid fa-book"></i>{{ interest }}</li>
+                {% endfor %}
+                  </ul>
+              </div>
+              
+              <div class="col-md-7">
+                <div class="section-subheading">Education</div>
+                <ul class="ul-edu fa-ul mb-0">
+                  {% for edu in page.education %}
+                  <li><i class="fa-li fa-solid fa-graduation-cap"></i>
+                    <div class="description">
+                      <p class="course">{{ edu.course }}, {{ edu.year }}</p>
+                      <p class="institution">{{ edu.institution }}</p>
+                    </div>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div> -->
 
           <!-- News -->
           {% if page.news and site.announcements.enabled -%}
-            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
+            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">News</a></h2>
             {%- include news.html limit=true %}
           {%- endif %}
 
@@ -55,7 +86,7 @@ layout: default
 
           <!-- Selected papers -->
           {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2>
+            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Selected Publications</a></h2>
             {%- include selected_papers.html %}
           {%- endif %}
 

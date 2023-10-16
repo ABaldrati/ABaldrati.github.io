@@ -1,84 +1,160 @@
----
----
-
-@string{aps = {American Physical Society,}}
-
-@book{einstein1956investigations,
+@article{baldrati2023composed,
+  abbr={ACM TOMM},
   bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+  title={Composed Image Retrieval using Contrastive Learning and Task-oriented CLIP-based Features},
+  author={Baldrati, A. and Bertini, M. and Uricchio, Tiberio and Del Bimbo, A.},
+  journal={ACM Transactions on Multimedia Computing, Communications and Applications},
+  publisher={ACM New York, NY},
+  year={2023},
+  abstract={Given a query composed of a reference image and a relative caption, the Composed Image Retrieval goal is to retrieve images visually similar to the reference one that integrates the modifications expressed by the caption. Given that recent research has demonstrated the efficacy of large-scale vision and language pre-trained (VLP) models in various tasks, we rely on features from the OpenAI CLIP model to tackle the considered task. We initially perform a task-oriented fine-tuning of both CLIP encoders using the element-wise sum of visual and textual features. Then, in the second stage, we train a Combiner network that learns to combine the image-text features integrating the bimodal information and providing combined features used to perform the retrieval. We use contrastive learning in both stages of training. Starting from the bare CLIP features as a baseline, experimental results show that the task-oriented fine-tuning and the carefully crafted Combiner network are highly effective and outperform more complex state-of-the-art approaches on FashionIQ and CIRR, two popular and challenging datasets for composed image retrieval.},
+  code={https://github.com/ABaldrati/CLIP4Cir},
+  arxiv={2308.11485},
+  pdf={clip4cir_tomm_2023.pdf}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
+@inproceedings{morelli2023ladi,
+  abbr={ACM MM},
   bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+  title={{LaDI-VTON: Latent Diffusion Textual-Inversion Enhanced Virtual Try-On}},
+  author={Morelli*, D and Baldrati*, A. and Cartella, G. and Cornia, M. and Bertini, M. and Cucchiara, R.},
+  booktitle={Proceedings of the ACM International Conference on Multimedia},
+  year={2023},
+  abstract={The rapidly evolving fields of e-commerce and metaverse continue to seek innovative approaches to enhance the consumer experience. At the same time, recent advancements in the development of diffusion models have enabled generative networks to create remarkably realistic images. In this context, image-based virtual try-on, which consists in generating a novel image of a target model wearing a given in-shop garment, has yet to capitalize on the potential of these powerful generative solutions. This work introduces LaDI-VTON, the first Latent Diffusion textual Inversion-enhanced model for the Virtual Try-ON task. The proposed architecture relies on a latent diffusion model extended with a novel additional autoencoder module that exploits learnable skip connections to enhance the generation process preserving the model's characteristics. To effectively maintain the texture and details of the in-shop garment, we propose a textual inversion component that can map the visual features of the garment to the CLIP token embedding space and thus generate a set of pseudo-word token embeddings capable of conditioning the generation process. Experimental results on Dress Code and VITON-HD datasets demonstrate that our approach outperforms the competitors by a consistent margin, achieving a significant milestone for the task.},
+  arxiv={2305.13501},
+  code={https://github.com/miccunifi/ladi-vton},
+  pdf={ladi-vton_acmmm_2023.pdf},
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  selected={true}
+
+@inproceedings{baldrati2023multimodal,
+    abbr={ICCV},
+    bibtex_show={true},
+    selected={true},
+    author={Baldrati*, A. and Morelli*, D. and Cartella, G. and Cornia, M. and Bertini, M. and Cucchiara, R.},
+    title={Multimodal Garment Designer: Human-Centric Latent Diffusion Models for Fashion Image Editing},
+    abstract={Fashion illustration is used by designers to communicate their vision and to bring the design idea from conceptualization to realization, showing how clothes interact with the human body. In this context, computer vision can thus be used to improve the fashion design process. Differently from previous works that mainly focused on the virtual try-on of garments, we propose the task of multimodal-conditioned fashion image editing, guiding the generation of human-centric fashion images by following multimodal prompts, such as text, human body poses, and garment sketches. We tackle this problem by proposing a new architecture based on latent diffusion models, an approach that has not been used before in the fashion domain. Given the lack of existing datasets suitable for the task, we also extend two existing fashion datasets, namely Dress Code and VITON-HD, with multimodal annotations collected in a semi-automatic manner. Experimental results on these new datasets demonstrate the effectiveness of our proposal, both in terms of realism and coherence with the given multimodal inputs.},
+    booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month={October},
+    year={2023},
+    pages={23393-23402},
+    arxiv={2304.02051},
+    code={https://github.com/aimagelab/multimodal-garment-designer},
+    pdf={mgd_iccv2023.pdf},
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@book{przibram1967letters,
+@inproceedings{baldrati2023zero,
+  abbr={ICCV},
   bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
+  selected={true},
+  title={Zero-Shot Composed Image Retrieval with Textual Inversion},
+  author={Baldrati*, A. and Agnolucci*, L. and Bertini, M. and Del Bimbo, A.},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  abstract={Composed Image Retrieval (CIR) aims to retrieve a target image based on a query composed of a reference image and a relative caption that describes the difference between the two images. The high effort and cost required for labeling datasets for CIR hamper the widespread usage of existing methods, as they rely on supervised learning. In this work, we propose a new task, Zero-Shot CIR (ZS-CIR), that aims to address CIR without requiring a labeled training dataset. Our approach, named zero-Shot composEd imAge Retrieval with textuaL invErsion (SEARLE), maps the visual features of the reference image into a pseudo-word token in CLIP token embedding space and integrates it with the relative caption. To support research on ZS-CIR, we introduce an open-domain benchmarking dataset named Composed Image Retrieval on Common Objects in context (CIRCO), which is the first dataset for CIR containing multiple ground truths for each query. The experiments show that SEARLE exhibits better performance than the baselines on the two main datasets for CIR tasks, FashionIQ and CIRR, and on the proposed CIRCO. The dataset, the code and the model are publicly available at https://github.com/miccunifi/SEARLE.},
+  pages={15338--15347},
+  year={2023},
+  arxiv={2303.15247},
+  code={https://github.com/miccunifi/SEARLE},
+  website={https://circo.micc.unifi.it/demo},
+  pdf={searle_iccv2023.pdf},
+}
+
+
+@inproceedings{burbi2023mapping,
+  abbr={ICCV},
+  abbrtype={Workshop},
+  bibtex_show={true},
+  title={Mapping Memes to Words for Multimodal Hateful Meme Classification},
+  author={Burbi*, G. and Baldrati*, A. and Agnolucci, L. and Bertini, M. and Del Bimbo, A.},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  abstract={Multimodal image-text memes are prevalent on the internet, serving as a unique form of communication that combines visual and textual elements to convey humor, ideas, or emotions. However, some memes take a malicious turn, promoting hateful content and perpetuating discrimination. Detecting hateful memes within this multimodal context is a challenging task that requires understanding the intertwined meaning of text and images. In this work, we address this issue by proposing a novel approach named ISSUES for multimodal hateful meme classification. ISSUES leverages a pre-trained CLIP vision-language model and the textual inversion technique to effectively capture the multimodal semantic content of the memes. The experiments show that our method achieves state-of-the-art results on the Hateful Memes Challenge and HarMeme datasets. The code and the pre-trained models are publicly available at https://github.com/miccunifi/ISSUES.},
+  pages={2832--2836},
+  year={2023},
+  arxiv={2310.08368},
+  %html={https://openaccess.thecvf.com/content/ICCV2023W/CLVL/html/Burbi_Mapping_Memes_to_Words_for_Multimodal_Hateful_Meme_Classification_ICCVW_2023_paper.html},
+  code={https://github.com/miccunifi/ISSUES},
+  pdf={issues_workshop_iccv2023.pdf}
+}
+
+
+@inproceedings{agnolucci2023eco,
+  abbr={ICCV},
+  abbrtype={Workshop},
+  bibtex_show={true},
+  title={ECO: Ensembling Context Optimization for Vision-Language Models},
+  author={Agnolucci*, L. and Baldrati*, A. and Todino, F. and Becattini, F. and Bertini, M. and Del Bimbo, A.},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  abstract={Image recognition has recently witnessed a paradigm shift, where vision-language models are now used to perform few-shot classification based on textual prompts. Among these, the CLIP model has shown remarkable capabilities for zero-shot transfer by matching an image and a custom textual prompt in its latent space. This has paved the way for several works that focus on engineering or learning textual contexts for maximizing CLIP's classification capabilities. In this paper, we follow this trend by learning an ensemble of prompts for image classification. We show that learning diverse and possibly shorter contexts improves considerably and consistently the results rather than relying on a single trainable prompt. In particular, we report better few-shot capabilities with no additional cost at inference time. We demonstrate the capabilities of our approach on 11 different benchmarks.},
+  pages={2811--2815},
+  year={2023},
+  arxiv={2307.14063},
+  %html={https://openaccess.thecvf.com/content/ICCV2023W/CLVL/html/Agnolucci_ECO_Ensembling_Context_Optimization_for_Vision-Language_Models_ICCVW_2023_paper.html},
+  pdf={eco_workshop_iccv2023.pdf},
+}
+
+
+@inproceedings{cartella2023openfashionclip,
+  abbr={ICIAP},
+  bibtex_show={true},
+  title={OpenFashionCLIP: Vision-and-Language Contrastive Learning with Open-Source Fashion Data},
+  author={Cartella, G. and Baldrati, A. and Morelli, D. and Cornia, M. and Bertini, M. and Cucchiara, R.},
+  booktitle={International Conference on Image Analysis and Processing},
+  pages={245--256},
+  year={2023},
+  organization={Springer},
+  abstract={The inexorable growth of online shopping and e-commerce demands scalable and robust machine learning-based solutions to accommodate customer requirements. In the context of automatic tagging classification and multimodal retrieval, prior works either defined a low generalizable supervised learning approach or more reusable CLIP-based techniques while, however, training on closed source data. In this work, we propose OpenFashionCLIP, a vision-and-language contrastive learning method that only adopts open-source fashion data stemming from diverse domains, and characterized by varying degrees of specificity. Our approach is extensively validated across several tasks and benchmarks, and experimental results highlight a significant out-of-domain generalization capability and consistent improvements over state-of-the-art methods both in terms of accuracy and recall.},
+  arxiv={2309.05551},
+  code={https://github.com/aimagelab/open-fashion-clip},
+  pdf={openfashionclip_iciap_2023.pdf},
+}
+
+
+
+@inproceedings{baldrati2022conditioned,
+  abbr={CVPR},
+  abbrtype={Workshop},
+  bibtex_show={true},
+  title={Conditioned and composed image retrieval combining and partially fine-tuning clip-based features},
+  author={Baldrati, A. and Bertini, M. and Uricchio, T. and Del Bimbo, A.},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={4959--4968},
+  year={2022},
+  abstract={In this paper, we present an approach for conditioned and composed image retrieval based on CLIP features. In this extension of content-based image retrieval (CBIR), an image is combined with a text that provides information regarding user intentions and is relevant for application domains like e-commerce. The proposed method is based on an initial training stage where a simple combination of visual and textual features is used, to fine-tune the CLIP text encoder. Then in a second training stage, we learn a more complex combiner network that merges visual and textual features. Contrastive learning is used in both stages. The proposed approach obtains state-of-the-art performance for conditioned CBIR on the FashionIQ dataset and for composed CBIR on the more recent CIRR dataset.},
+  html={https://openaccess.thecvf.com/content/CVPR2022W/ODRUM/html/Baldrati_Conditioned_and_Composed_Image_Retrieval_Combining_and_Partially_Fine-Tuning_CLIP-Based_CVPRW_2022_paper.html},
+  code={https://github.com/ABaldrati/CLIP4Cir},
+  pdf={cvpr_2022_workshop.pdf}
+}
+
+
+
+
+
+@inproceedings{baldrati2022effective,
+  abbr={CVPR},
+  abbrtype={Demo},
+  bibtex_show={true},
+  title={Effective conditioned and composed image retrieval combining clip-based features},
+  author={Baldrati, A. and Bertini, M. and Uricchio, T. and Del Bimbo, A.},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={21466--21474},
+  year={2022},
+  abstract={Conditioned and composed image retrieval extend CBIR systems by combining a query image with an additional text that expresses the intent of the user, describing additional requests w.r.t. the visual content of the query image. This type of search is interesting for e-commerce applications, e.g. to develop interactive multimodal searches and chatbots. In this demo, we present an interactive system based on a combiner network, trained using contrastive learning, that combines visual and textual features obtained from the OpenAI CLIP network to address conditioned CBIR. The system can be used to improve e-shop search engines. For example, considering the fashion domain it lets users search for dresses, shirts and toptees using a candidate start image and expressing some visual differences w.r.t. its visual content, e.g. asking to change color, pattern or shape. The proposed network obtains state-of-the-art performance on the FashionIQ dataset and on the more recent CIRR dataset, showing its applicability to the fashion domain for conditioned retrieval, and to more generic content considering the more general task of composed image retrieval.},
+  html={https://openaccess.thecvf.com/content/CVPR2022/html/Baldrati_Effective_Conditioned_and_Composed_Image_Retrieval_Combining_CLIP-Based_Features_CVPR_2022_paper.html},
+  code={https://github.com/ABaldrati/CLIP4CirDemo},
+  pdf={cvpr_2022_demo.pdf}
+}
+
+
+
+@incollection{baldrati2021conditioned,
+  abbr={ACM MM Asia},
+  bibtex_show={true},
+  title={Conditioned image retrieval for fashion using contrastive learning and CLIP-based features},
+  author={Baldrati, A. and Bertini, M. and Uricchio, T. and Del Bimbo, A.},
+  booktitle={ACM Multimedia Asia},
+  pages={1--5},
+  year={2021},
+  abstract={Building on the recent advances in multimodal zero-shot representation learning, in this paper we explore the use of features obtained from the recent CLIP model to perform conditioned image retrieval. Starting from a reference image and an additive textual description of what the user wants with respect to the reference image, we learn a Combiner network that is able to understand the image content, integrate the textual description and provide combined feature used to perform the conditioned image retrieval. Starting from the bare CLIP features and a simple baseline, we show that a carefully crafted Combiner network, based on such multimodal features, is extremely effective and outperforms more complex state of the art approaches on the popular FashionIQ dataset.},
+  html={https://dl.acm.org/doi/abs/10.1145/3469877.3493593},
+  pdf={acm_mm_asia_2021.pdf},
 }
