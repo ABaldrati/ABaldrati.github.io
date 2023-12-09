@@ -30,7 +30,7 @@ education:
 
 Hello! 👋
 
-I am Alberto Baldrati, a second-year PhD student enrolled in the AI Italian National Doctorate program based at the [University of Pisa](https://www.unipi.it/index.php/english]).
+I am Alberto Baldrati, a third-year PhD student enrolled in the AI Italian National Doctorate program based at the [University of Pisa](https://www.unipi.it/index.php/english]).
 In practice, I am hosted by the [University of Florence](https://www.unifi.it/changelang-eng.html) and work at the [Media Integration and Communication Center (MICC)](https://www.micc.unifi.it/) under the supervision of Prof. [Marco Bertini](https://scholar.google.com/citations?user=SBm9ZpYAAAAJ&hl=en). I also closely collaborate with [Lorenzo Agnolucci](https://scholar.google.com/citations?user=hsCt4ZAAAAAJ&hl=en) and [Davide Morelli](https://scholar.google.com/citations?user=UJ4D3rYAAAAJ&hl=en).
 
 Previously, I obtained my MSc in Computer Science and Engineering <em>magna cum laude</em> at the University of Florence under the supervision of Prof. [Marco Bertini](https://scholar.google.com/citations?user=SBm9ZpYAAAAJ&hl=en) and Prof. [Alberto Del Bimbo](https://scholar.google.com/citations?user=bf2ZrFcAAAAJ&hl=en) with a thesis titled <em>"Deep Learning techniques for image retrieval using joint textual and visual encoders"</em>.
