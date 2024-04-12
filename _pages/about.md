@@ -37,4 +37,6 @@ Previously, I obtained my MSc in Computer Science and Engineering <em>magna cum 
 
 My main research interests revolve around <strong>vision and language</strong>, with a particular focus on vision and language pretraining and composed image retrieval, and <strong>fashion image generation</strong>, with a particular focus on multimodal fashion image editing and virtual try-on.
 
+Currently interning as a Computer Vision Research Scientist at [Huawei Finland Research Center](https://huaweifinlandrnd.teamtailor.com/).
+
 <em>If you wish to learn more about my research or explore potential collaborations, please feel free to reach out via email!</em>
