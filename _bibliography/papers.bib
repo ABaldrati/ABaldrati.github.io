@@ -1,9 +1,20 @@
+@article{agnolucci2024isearle,
+  abbr={arXiv},
+  bibtex_show={true},
+  title={iSEARLE: Improving Textual Inversion for Zero-Shot Composed Image Retrieval},
+  author={Agnolucci*, L. and Baldrati*, A. and Bertini, M. and Del Bimbo, A.},
+  year={2024},
+  abstract={Given a query consisting of a reference image and a relative caption, Composed Image Retrieval (CIR) aims to retrieve target images visually similar to the reference one while incorporating the changes specified in the relative caption. The reliance of supervised methods on labor-intensive manually labeled datasets hinders their broad applicability. In this work, we introduce a new task, Zero-Shot CIR (ZS-CIR), that addresses CIR without the need for a labeled training dataset. We propose an approach named iSEARLE (improved zero-Shot composEd imAge Retrieval with textuaL invErsion) that involves mapping the visual information of the reference image into a pseudo-word token in CLIP token embedding space and combining it with the relative caption. To foster research on ZS-CIR, we present an open-domain benchmarking dataset named CIRCO (Composed Image Retrieval on Common Objects in context), the first CIR dataset where each query is labeled with multiple ground truths and a semantic categorization. The experimental results illustrate that iSEARLE obtains state-of-the-art performance on three different CIR datasets -- FashionIQ, CIRR, and the proposed CIRCO -- and two additional evaluation settings, namely domain conversion and object composition. The dataset, the code, and the model are publicly available at https://github.com/miccunifi/SEARLE.},
+  code={https://github.com/miccunifi/SEARLE},
+  arxiv={2405.02951},
+  pdf={isearle_arxiv_2024.pdf}
+}
+
 @article{baldrati2024multimodalconditioned,
       abbr={arXiv},
       bibtex_show={true},
       title={Multimodal-Conditioned Latent Diffusion Models for Fashion Image Editing},
       author={Baldrati*, A. and Morelli*, D. and Cornia, M. and Bertini, M. and Cucchiara, R.},
-      %journal={arXiv preprint arXiv:2403.14828},
       year={2024},
       abstract={Fashion illustration is a crucial medium for designers to convey their creative vision and transform design concepts into tangible representations that showcase the interplay between clothing and the human body. In the context of fashion design, computer vision techniques have the potential to enhance and streamline the design process. Departing from prior research primarily focused on virtual try-on, this paper tackles the task of multimodal-conditioned fashion image editing. Our approach aims to generate human-centric fashion images guided by multimodal prompts, including text, human body poses, garment sketches, and fabric textures. To address this problem, we propose extending latent diffusion models to incorporate these multiple modalities and modifying the structure of the denoising network, taking multimodal prompts as input. To condition the proposed architecture on fabric textures, we employ textual inversion techniques and let diverse cross-attention layers of the denoising network attend to textual and texture information, thus incorporating different granularity conditioning details. Given the lack of datasets for the task, we extend two existing fashion datasets, Dress Code and VITON-HD, with multimodal annotations. Experimental evaluations demonstrate the effectiveness of our proposed approach in terms of realism and coherence concerning the provided multimodal inputs.},
       code={https://github.com/aimagelab/Ti-MGD},

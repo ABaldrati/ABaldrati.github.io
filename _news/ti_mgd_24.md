@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-One paper about [multimodal fashion image editing](https://arxiv.org/abs/2403.14828) released on arXiv.
+We released the [extended version](https://arxiv.org/abs/2403.14828) of our [ICCV2023](https://arxiv.org/abs/2304.02051) paper on multimodal fashion image editing.
