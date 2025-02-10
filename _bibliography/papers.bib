@@ -1,3 +1,18 @@
+@inproceedings{mistretta2025cross,
+  abbr={ICLR},
+  bibtex_show={true},
+  selected={true},
+  title={Cross the Gap: Exposing the Intra-modal Misalignment in CLIP via Modality Inversion},
+  author={Mistretta*, M. and Baldrati*, A. and Agnolucci*, L. and Bertini, M. and Bagdanov, A.},
+  booktitle={The Thirteenth International Conference on Learning Representations},
+  year={2025},
+  abstract={Pre-trained multi-modal Vision-Language Models like CLIP are widely used off-the-shelf for a variety of applications. In this paper, we show that the common practice of individually exploiting the text or image encoders of these powerful multi-modal models is highly suboptimal for intra-modal tasks like image-to-image retrieval. We argue that this is inherently due to the CLIP-style inter-modal contrastive loss that does not enforce any intra-modal constraints, leading to what we call intra-modal misalignment. To demonstrate this, we leverage two optimization-based modality inversion techniques that map representations from their input modality to the complementary one without any need for auxiliary data or additional trained adapters. We empirically show that, in the intra-modal tasks of image-to-image and text-to-text retrieval, approaching these tasks inter-modally significantly improves performance with respect to intra-modal baselines on more than fifteen datasets. Additionally, we demonstrate that approaching a native inter-modal task (e.g. zero-shot image classification) intra-modally decreases performance, further validating our findings. Finally, we show that incorporating an intra-modal term in the pre-training objective or narrowing the modality gap between the text and image feature embedding spaces helps reduce the intra-modal misalignment. The code is publicly available at: https://github.com/miccunifi/Cross-the-Gap.},
+  arxiv={2502.04263},
+  code={https://github.com/miccunifi/Cross-the-Gap},
+  website={https://openreview.net/forum?id=VVVfuIcmKR},
+  pdf={cross_the_gap_iclr2025.pdf}
+}
+
 @inproceedings{mistretta2025improving,
   abbr={ECCV},
   bibtex_show={true},
@@ -5,6 +20,8 @@
   title={Improving Zero-shot Generalization of Learned Prompts via Unsupervised Knowledge Distillation},
   author={Mistretta*, M. and Baldrati*, A. and Bertini, M. and Bagdanov, A.},
   booktitle={European Conference on Computer Vision},
+  abstract={Vision-Language Models (VLMs) demonstrate remarkable zero-shot generalization to unseen tasks, but fall short of the performance of supervised methods in generalizing to downstream tasks with limited data. Prompt learning is emerging as a parameter-efficient method for adapting VLMs, but state-of-the-art approaches require annotated samples. In this paper we propose a novel approach to prompt learning based on unsupervised knowledge distillation from more powerful models. Our approach, which we call Knowledge Distillation Prompt Learning (KDPL), can be integrated into existing prompt learning techniques and eliminates the need for labeled examples during adaptation. Our experiments on more than ten standard benchmark datasets demonstrate that KDPL is very effective at improving generalization of learned prompts for zero-shot domain generalization, zero-shot cross-dataset generalization, and zero-shot base-to-novel class generalization problems. KDPL requires no ground-truth labels for adaptation, and moreover we show that even in the absence of any knowledge of training class names it can be used to effectively transfer knowledge.},
+  code={https://github.com/miccunifi/KDPL},
   pages={459--477},
   year={2025},
   organization={Springer},
