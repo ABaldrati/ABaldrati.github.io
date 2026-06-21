@@ -1,3 +1,30 @@
+@article{das2026more,
+  abbr={ACL},
+  abbrtype={Findings},
+  title={More Images, More Problems? A Controlled Analysis of VLM Failure Modes},
+  author={Das, A. and Bulat, A. and Baldrati, A. and Metaxas, I. and Schiele, B. and Tzimiropoulos, G. and Martinez, B.},
+  journal={arXiv preprint arXiv:2601.07812},
+  year={2026},
+  arxiv={2601.07812},
+  pdf={mimic_aclf26.pdf},
+  abstract={Large Vision Language Models (LVLMs) have demonstrated remarkable capabilities, yet their proficiency in understanding and reasoning over multiple images remains largely unexplored. While existing benchmarks have initiated the evaluation of multi-image models, a comprehensive analysis of their core weaknesses and their causes is still lacking. In this work, we introduce MIMIC (Multi-Image Model Insights and Challenges), a new benchmark designed to rigorously evaluate the multi-image capabilities of LVLMs. Using MIMIC, we conduct a series of diagnostic experiments that reveal pervasive issues: LVLMs often fail to aggregate information across images and struggle to track or attend to multiple concepts simultaneously. To address these failures, we propose two novel complementary remedies. On the data side, we present a procedural data-generation strategy that composes single-image annotations into rich, targeted multi-image training examples. On the optimization side, we analyze layer-wise attention patterns and derive an attention-masking scheme tailored for multi-image inputs. Experiments substantially improved cross-image aggregation, while also enhancing performance on existing multi-image benchmarks, outperforming prior state of the art across tasks.},
+  code={https://github.com/anurag-198/MIMIC}
+}
+
+@inproceedings{bulat2026vision,
+  abbr={CVPR},
+  bibtex_show={true},
+  selected={true},
+  title={VISion On Request: Enhanced VLLM efficiency with sparse, dynamically selected, vision-language interactions},
+  author={Bulat*, A. and Baldrati*, A. and Metaxas*, I. and Ouali, Y. and Tzimiropoulos, G.},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={31920--31930},
+  arxiv={2603.23495},
+  pdf={visor_cvpr26.pdf},
+  year={2026},
+  abstract={Existing approaches for improving the efficiency of Large Vision-Language Models (LVLMs) are largely based on the concept of visual token reduction. This approach, however, creates an information bottleneck that impairs performance, especially on challenging tasks that require fine-grained understanding and reasoning. In this work, we challenge this paradigm by introducing VISion On Request (VISOR), a method that reduces inference cost without discarding visual information. Instead of compressing the image, VISOR improves efficiency by sparsifying the interaction between image and text tokens. Specifically, the language model attends to the full set of high-resolution visual tokens through a small, strategically placed set of attention layers: general visual context is provided by efficient cross-attention between text-image, while a few well-placed and dynamically selected self-attention layers refine the visual representations themselves, enabling complex, high-resolution reasoning when needed. Based on this principle, we first train a single universal network on a range of computational budgets by varying the number of self-attention layers, and then introduce a lightweight policy mechanism that dynamically allocates visual computation based on per-sample complexity. Extensive experiments show that VISOR drastically reduces computational cost while matching or exceeding state-of-the-art results across a diverse suite of benchmarks, and excels in challenging tasks that require detailed visual understanding.}
+}
+
 @article{agnolucci2025isearle,
   abbr={TPAMI},
   bibtex_show={true},
@@ -30,7 +57,6 @@
 @inproceedings{mistretta2025improving,
   abbr={ECCV},
   bibtex_show={true},
-  selected={true},
   title={Improving Zero-shot Generalization of Learned Prompts via Unsupervised Knowledge Distillation},
   author={Mistretta*, M. and Baldrati*, A. and Bertini, M. and Bagdanov, A.},
   booktitle={European Conference on Computer Vision},
@@ -45,15 +71,20 @@
 }
   
 @article{baldrati2024multimodalconditioned,
-      abbr={arXiv},
+      abbr={ACM TOMM},
       bibtex_show={true},
       title={Multimodal-Conditioned Latent Diffusion Models for Fashion Image Editing},
       author={Baldrati*, A. and Morelli*, D. and Cornia, M. and Bertini, M. and Cucchiara, R.},
-      year={2024},
       abstract={Fashion illustration is a crucial medium for designers to convey their creative vision and transform design concepts into tangible representations that showcase the interplay between clothing and the human body. In the context of fashion design, computer vision techniques have the potential to enhance and streamline the design process. Departing from prior research primarily focused on virtual try-on, this paper tackles the task of multimodal-conditioned fashion image editing. Our approach aims to generate human-centric fashion images guided by multimodal prompts, including text, human body poses, garment sketches, and fabric textures. To address this problem, we propose extending latent diffusion models to incorporate these multiple modalities and modifying the structure of the denoising network, taking multimodal prompts as input. To condition the proposed architecture on fabric textures, we employ textual inversion techniques and let diverse cross-attention layers of the denoising network attend to textual and texture information, thus incorporating different granularity conditioning details. Given the lack of datasets for the task, we extend two existing fashion datasets, Dress Code and VITON-HD, with multimodal annotations. Experimental evaluations demonstrate the effectiveness of our proposed approach in terms of realism and coherence concerning the provided multimodal inputs.},
       code={https://github.com/aimagelab/Ti-MGD},
       arxiv={2403.14828},
-      pdf={ti_mgd_arxiv_2024.pdf}  
+      pdf={ti_mgd_arxiv_2024.pdf},
+      journal={ACM Transactions on Multimedia Computing, Communications and Applications},
+      volume={22},
+      number={4},
+      pages={1--27},
+      year={2026},
+      publisher={ACM New York, NY}
 }
 
 

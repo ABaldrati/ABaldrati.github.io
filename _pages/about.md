@@ -35,10 +35,12 @@ Previously, I successfully defended my PhD thesis in February 2025 as part of th
 During my PhD, my research interests revolved around <strong>vision and language</strong>, with a particular focus on prompt learning and composed image retrieval, and <strong>fashion image generation</strong>, focusing on multimodal fashion image editing and virtual try-on.
 As part of my PhD journey, I also had the opportunity to intern as a Computer Vision Research Scientist at [Huawei Finland Research Center](https://huaweifinlandrnd.teamtailor.com/) from March to September 2024, where I worked on video generation.
 
+Currently, my research focuses on efficient vision-and-language applications, particularly <strong>efficient VLLMs</strong> (see [this paper](https://arxiv.org/pdf/2603.23495)).
+
 <!-- I also closely collaborate with [Lorenzo Agnolucci](https://scholar.google.com/citations?user=hsCt4ZAAAAAJ&hl=en) and [Davide Morelli](https://scholar.google.com/citations?user=UJ4D3rYAAAAJ&hl=en). -->
 
 <!-- Previously, I obtained my MSc in Computer Science and Engineering <em>magna cum laude</em> at the University of Florence under the supervision of Prof. [Marco Bertini](https://scholar.google.com/citations?user=SBm9ZpYAAAAJ&hl=en) and Prof. [Alberto Del Bimbo](https://scholar.google.com/citations?user=bf2ZrFcAAAAJ&hl=en) with a thesis titled <em>"Deep Learning techniques for image retrieval using joint textual and visual encoders"</em>. -->
 
 <!-- Currently interning as a Computer Vision Research Scientist at [Huawei Finland Research Center](https://huaweifinlandrnd.teamtailor.com/). -->
 
-<em>If you wish to learn more about my research or explore potential collaborations, please feel free to reach out via email!</em>
+<!-- <em>If you wish to learn more about my research or explore potential collaborations, please feel free to reach out via email!</em> -->
